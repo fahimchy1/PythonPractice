@@ -1,0 +1,10 @@
+tcase = int(input())
+
+for case in range(tcase):
+    u = input()
+    st = str(input())
+    mxChar = 'a'
+    for ch in st:
+        mxChar = max(ch,mxChar)
+    
+    print(ord(mxChar)-ord('a')+1)
