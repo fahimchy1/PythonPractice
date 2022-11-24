@@ -1,0 +1,12 @@
+tcase = int(input())
+
+for case in range(tcase):
+    u = int(input())
+    li = [int(x) for x in input().split()]
+    
+    sortedLi = sorted(li)
+    for val in li:
+        if val==sortedLi[-1]:
+            print(val - sortedLi[-2])
+        else:
+            print(val - sortedLi[-1])
