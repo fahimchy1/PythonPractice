@@ -1,0 +1,6 @@
+tCase = int(input())
+
+for ts in range(tCase):
+    li = [int(x) for x in input().split()]
+    li = sorted(li)
+    print(li[1])
